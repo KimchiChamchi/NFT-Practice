@@ -80,7 +80,7 @@ const MyAnimal = props => {
       return; // 계정이 없을 경우(로그인 안 됐을 경우) 실행되지 않게하기
     getIsApprovedForAll();
     getAnimalTokens(); // 해당 계정의 토큰들 불러오기
-  }, [accounts, mintAnimalTokenContract, saleAnimalTokenContract]);
+  }, [accounts]);
   useEffect(() => {
     console.log(animalCardArray);
   }, [animalCardArray]);
