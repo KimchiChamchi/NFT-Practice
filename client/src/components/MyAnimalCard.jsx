@@ -59,6 +59,7 @@ const MyAnimalCard = props => {
               size={'sm'}
               colorScheme={'green'}
               mt={2}
+              disabled={!saleStatus}
               onClick={onClickSell}
             >
               판매
