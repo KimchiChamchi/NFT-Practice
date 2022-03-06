@@ -7,8 +7,6 @@ const Main = props => {
   const accounts = props.accounts;
   const [newAnimalType, setNewAnimalType] = useState('');
 
-  useEffect(async () => {}, []);
-
   const onClickMint = async () => {
     try {
       // 계정이 없을 경우(로그인 안 됐을 경우) 실행되지 않게하기
