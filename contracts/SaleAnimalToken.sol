@@ -20,7 +20,7 @@ contract SaleAnimalToken {
     // 토큰id로부터 토큰의 가격을 담을 매핑
     mapping(uint256 => uint256) public animalTokenPrices;
 
-    // 판매중인 토큰을 담기 위한 배열 (판매대)
+    // 판매중인 토큰id를 담기 위한 배열 (판매대)
     uint256[] public onSaleAnimalTokenArray;
 
     // 토큰 판매를 위한 세팅
