@@ -18,8 +18,10 @@
 //         await saleAnimalTokenContract.methods
 //           .getOnsaleAnimalTokenArrayLength()
 //           .call(); // 판매중인 토큰이 몇개인지 불러오는 메서드
-
+//       // 판매중인 토큰이 없으면 아무것도 안하기
+//       if (getOnsaleAnimalTokenArrayLength == 0) return;
 //       const tempOnSaleArray = []; // 판매중인 토큰정보 담을 임시배열
+
 //       // 판매중인 토큰 개수만큼 반복
 //       for (let i = 0; i < parseInt(getOnsaleAnimalTokenArrayLength, 10); i++) {
 //         const animalTokenId = await saleAnimalTokenContract.methods
@@ -37,7 +39,8 @@
 //           animalType: animalType,
 //           animalTokenPrice: animalTokenPrice,
 //         });
-//       } // 판매중인 토큰정보들 담긴 임시 배열을 useState에 담기
+//       }
+//       // 판매중인 토큰정보들 담긴 임시 배열을 useState에 담기
 //       setSaleAnimalCardArray(tempOnSaleArray);
 //     } catch (error) {
 //       console.log(error);
